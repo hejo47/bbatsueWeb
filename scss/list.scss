@@ -4,6 +4,32 @@ $light: gray;
 $text-color: #333;
 $secondary: #9E6934;
 
+.product {
+    &-item {
+        border-radius: 20px;
+        &-img {
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+        }
+        &-text {
+            .red {
+                color: #F27979;
+            }
+            del {
+                color: #CCC;
+                font-weight: 300;
+            }
+        }
+        .wish {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+}
 
 @import "./font";
 @import "./mixin";
