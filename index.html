@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="./img/favicon//apple-icon-60x60.png" />
@@ -25,6 +26,7 @@
 	<title>뺏슈</title>
 	<link rel="stylesheet" href="css/main.min.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="./js/food.js"></script>
 </head>
 <body>
 	<header class="bg-primary py-4">
@@ -37,7 +39,7 @@
 				<div class="col-lg-4 d-flex justify-content-end align-items-center">
 					<ul class="d-flex list-unstyled my-0">
 						<li><a href="#" class="text-color text-decoration-none mx-2">회원가입</a></li>
-						<li><a href="#" class="text-color text-decoration-none mx-2">로그인</a></li>
+						<li><a href="sub/sub_login.html" class="text-color text-decoration-none mx-2">로그인</a></li>
 						<li><a href="#" class="text-color text-decoration-none mx-2">고객센터</a></li>
 					</ul>
 				</div>
@@ -62,7 +64,7 @@
 						<ul class="px-0 ps-2 list-unstyled">
 							<li class="py-2"><a href="./sub/about.html" class="text-color text-decoration-none">브랜드 소개</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">새소식</a></li>
-							<li class="py-2"><a href="#" class="text-color text-decoration-none">제품</a></li>
+							<li class="py-2"><a href="sub/list.html" class="text-color text-decoration-none">제품</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">정기 배송</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">선물</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">이벤트</a></li>
@@ -83,7 +85,7 @@
 				<div class="d-none col-md-8 col-sm-2 logo d-sm-flex justify-content-sm-between justify-content-md-center align-items-center">
 				<ul class="d-none d-lg-flex my-0 list-unstyled">
 					<li><a href="./sub/about.html" class="text-color text-decoration-none mx-3">브랜드 소개</a></li>
-					<li><a href="#" class="text-color text-decoration-none mx-3">제품</a></li>
+					<li><a href="sub/list.html" class="text-color text-decoration-none mx-3">제품</a></li>
 					<li><a href="#" class="text-color text-decoration-none mx-3">정기 배송</a></li>
 					<li><a href="#" class="text-color text-decoration-none mx-3">선물</a></li>
 					<li><a href="#" class="text-color text-decoration-none mx-3">이벤트</a></li>
@@ -148,8 +150,8 @@
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
 						</div>
 						<p class="product-item-text mt-3">
-							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
-							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+							<b></b><br>
+							<span class="red">10%</span> <b>4,900원</b> <b class="bread_sweet"></b> <del class="text-size-12">5,500원</del>
 						</p>
 					</a>
 				</div>
@@ -264,7 +266,7 @@
 						</div>
 						<p class="product-item-text mt-3">
 							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
-							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+							<span class="red">10%</span> <b class="price">4,900원</b> <del class="text-size-12">5,500원</del>
 						</p>
 					</a>
 				</div>
@@ -473,6 +475,7 @@
 	</footer>
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	
 	<script>
 		AOS.init();
 	</script>
