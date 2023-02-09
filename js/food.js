@@ -1,12 +1,12 @@
 const API_KEY = "L%2Fb%2BfQ9y55je7IXprugDIh9H%2F2k29xdC4W4IqCo36EPBgUz8DVdtezAHCrk4aRyQaZgMrrM%2BRQRSINADGG4NgQ%3D%3D";
 
-let menu = "샌드위치";
+let bread_name = "샌드위치";
 let items_num = 2;
 
 get_data();
 
 async function get_data() {
-  const url = `http://apis.data.go.kr/1471000/FoodNtrIrdntInfoService1/getFoodNtrItdntList1?ServiceKey=${API_KEY}&desc_kor=${menu}&numOfRows=20&type=json`;
+  const url = `http://apis.data.go.kr/1471000/FoodNtrIrdntInfoService1/getFoodNtrItdntList1?ServiceKey=${API_KEY}&desc_kor=${bread_name}&numOfRows=20&type=json`;
   const response = await fetch(url);
   data = await response.json();
   console.log("data", data); 
