@@ -1,9 +1,9 @@
 # 작업 페이지
-<p>메인: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/"></a></p>
-<p>로그인: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/sub_login.html"></a></p>
-<p>브랜드 소개: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/about.html"></a></p>
-<p>제품: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/sub_login.html"></a></p>
-<p>제품 디테일: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/productList.html"></a></p>
+<p>메인: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/">https://bbatsue-4y87msk7g-hejo47.vercel.app/</a></p>
+<p>로그인: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/sub_login.html">https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/sub_login.html</a></p>
+<p>브랜드 소개: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/about.html">https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/about.html</a></p>
+<p>제품: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/sub_login.html">https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/sub_login.html</a></p>
+<p>제품 디테일: <a href="https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/productList.html">https://bbatsue-4y87msk7g-hejo47.vercel.app/sub/productList.html</a></p>
 
 # 규칙
 <p>1. 파일 이름은 'sub_***.html' 로 작성 바람.</p>
