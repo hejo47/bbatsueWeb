@@ -12,7 +12,6 @@
 <p>4. 만들 클래스의 이름은 스네이크 케이스 (ex] map_body) 로 작성 바람.</P>
 <p>5. 만들 클래스는 common에 작성 바람. (무조건 pull 받기)</P>
 
-
 # Vercel URL
 <a href="https://bbatsue-web.vercel.app/" target="_blank">https://bbatsue-web.vercel.app/</a>
 
