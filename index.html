@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="./img/favicon//apple-icon-60x60.png" />
@@ -25,6 +26,7 @@
 	<title>뺏슈</title>
 	<link rel="stylesheet" href="css/main.min.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="./js/food.js"></script>
 </head>
 <body>
 	<header class="bg-primary py-4">
@@ -148,8 +150,8 @@
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
 						</div>
 						<p class="product-item-text mt-3">
-							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
-							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+							<b></b><br>
+							<span class="red">10%</span> <b>4,900원</b> <b class="bread_sweet"></b> <del class="text-size-12">5,500원</del>
 						</p>
 					</a>
 				</div>
@@ -264,7 +266,7 @@
 						</div>
 						<p class="product-item-text mt-3">
 							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
-							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+							<span class="red">10%</span> <b class="price">4,900원</b> <del class="text-size-12">5,500원</del>
 						</p>
 					</a>
 				</div>
@@ -473,6 +475,7 @@
 	</footer>
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	
 	<script>
 		AOS.init();
 	</script>
