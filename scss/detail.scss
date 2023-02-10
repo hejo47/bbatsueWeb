@@ -1,19 +1,35 @@
-// var
 $primary: #FFFCF1;
 $light: gray;
 $text-color: #333;
 $secondary: #9E6934;
-
-// about
-body{
-    display: none;
+// product
+.product {
+    &-item {
+        border-radius: 20px;
+        &-img {
+            width: 100%;
+            position: relative;
+        }
+        &-text {
+            .red {
+                color: #F27979;
+            }
+            del {
+                color: #CCC;
+                font-weight: 300;
+            }
+        }
+        
+    }
 }
-
+.wish {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
 @import "./font";
 @import "./mixin";
 @import "./common";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
 @import "./reset";
-
 

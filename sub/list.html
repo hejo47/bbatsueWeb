@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon//apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon//apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon//apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon//apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon//apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon//apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon//apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon//apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="192x192" href="../img/favicon//android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon//favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon//favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon//favicon-16x16.png" />
+	<link rel="manifest" href="../img/favicon//manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../img/favicon//ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+	<title>제품</title>
+	<link rel="stylesheet" href="../css/list.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+	<header class="bg-primary py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4 logo d-flex justify-content-center align-items-center">
+					<a href="../index.html"><img src="../img/logo/logo.svg" alt="뺏슈"></a>
+				</div>
+				<div class="col-lg-4 d-flex justify-content-end align-items-center">
+					<ul class="d-flex list-unstyled my-0">
+						<li><a href="#" class="text-color text-decoration-none mx-2">회원가입</a></li>
+						<li><a href="#" class="text-color text-decoration-none mx-2">로그인</a></li>
+						<li><a href="#" class="text-color text-decoration-none mx-2">고객센터</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="bg-primary">
+		<div class="container">
+			<div class="row flex-wrap">
+				<div id="all_menu" class="col-md-2 col-sm-5 col-6 d-flex justify-content-start align-items-center">
+					<a href="#">
+						<img src="../img/icon/menu.svg" alt="menu">
+					</a>
+				</div>
+				<div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStart">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasStart"></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<h3 class="offcanvas-title text-secondary mb-4">전체메뉴</h3>
+						<ul class="px-0 ps-2 list-unstyled">
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">브랜드 소개</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">새소식</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">제품</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">정기 배송</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">선물</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">이벤트</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">고객센터</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">Q&A</a></li>
+							<li class="py-2"><div class="menu_line border-top pt-2 d-block" style="border-color: black; width: 60px;"></div></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">SNS</a>
+								<ul class="row sns_list ps-3">
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Instagram</span><img src="../img/icon/insta.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Kakaotalk</span><img src="../img/icon/kakaotalk.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Facebook</span><img src="../img/icon/facebook.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Twitter</span><img src="../img/icon/twitter.svg" alt=""></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="d-none col-md-8 col-sm-2 logo d-sm-flex justify-content-sm-between justify-content-md-center align-items-center">
+				<ul class="d-none d-lg-flex my-0 list-unstyled">
+					<li><a href="#" class="text-color text-decoration-none mx-3">브랜드 소개</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">제품</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">정기 배송</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">선물</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">이벤트</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">리뷰</a></li>
+				</ul>
+				</div>
+				<div class="col-md-2 col-sm-5 col-6 d-flex justify-content-end align-items-center">
+					<ul class="d-flex list-unstyled my-3">
+						<li><a href="#" class="text-color text-decoration-none mx-2"><img src="../img/icon/search.svg" alt="search"></a></li>
+						<li><a href="#" class="text-color text-decoration-none mx-2"><img src="../img/icon/cart.svg" alt="cart"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section-padding-2 section-bg-color" data-aos="fade-up" data-aos-duration="2500">
+        <div class="container">
+
+            <nav class="navigation navigation-pills" id="pills-tab" role="tablist">
+                <a class="nav-link active" id="pills-popular-tab" data-bs-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">인기제품</a>
+                <a class="nav-link" id="pills-new-tab" data-bs-toggle="pill" href="#pills-new" role="tab" aria-controls="pills-new" aria-selected="false">신제품</a>
+                <a class="nav-link" id="pills-bread-tab" data-bs-toggle="pill" href="#pills-bread" role="tab" aria-controls="pills-bread" aria-selected="false">빵</a>
+                <a class="nav-link" id="pills-dessert-tab" data-bs-toggle="pill" href="#pills-dessert" role="tab" aria-controls="pills-dessert" aria-selected="false">디저트</a>
+                
+              </nav>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade active show" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab">
+                    <div class="container">
+                        <div class="title">
+                            <h1 class="text-middle section-text-color">인기제품</h1>
+                        </div>  
+                        <div class="row mb-5">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <!-- <h1 class="text-center section-text-color">디저트</h1> -->
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-end align-items-center">
+                                <a href="#" class="text-color text-decoration-none">인기순|리뷰순|추천순  <img src="../img/icon/arrow_right.svg" alt="view more"></a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>1 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
+                    <div class="container">
+                        <div class="title">
+                            <h1 class="text-middle section-text-color">신제품</h1>
+                        </div>    
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>2 저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-bread" role="tabpanel" aria-labelledby="pills-bread-tab">
+                    <div class="container">
+                        <div class="title">
+                            <h1 class="text-middle section-text-color">빵</h1>
+                        </div>  
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>3 저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-dessert" role="tabpanel" aria-labelledby="pills-dessert-tab">
+                    <div class="container">
+                        <div class="title">
+                            <h1 class="text-middle section-text-color">디저트</h1>
+                        </div>  
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>4 저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row product-item-list">
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                                <a href="#" class="text-decoration-none text-color">
+                                    <div class="product-item-img">
+                                        <img src="../img/product/product1.png" alt="product1">
+                                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                                    </div>
+                                    <p class="product-item-text mt-3">
+                                        <b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+        </div>
+		
+	</section>
+
+
+	<footer class="border-bottom">
+		<div class="container">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+				<div class="col-6 d-flex align-items-center">
+					<ul class="d-flex mb-0 ps-0 gap-3">
+						<li><a href="#" class="text-color text-decoration-none">이용약관</a></li>
+						<li><a href="#" class="text-color text-decoration-none">고객센터</a></li>
+						<li><a href="#" class="text-color text-decoration-none"><b>개인정보처리방침</b></a></li>
+					</ul>
+				</div>
+				<ul class="col-6 nav mt-4 mt-sm-0 justify-content-end list-unstyled d-flex">
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/insta.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/kakaotalk.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/facebook.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/twitter.svg" alt=""></a></li>
+				</ul>
+			</footer>
+		</div>
+	</footer>
+	<footer>
+		<div class="container">
+			<footer class="row py-3 my-4">
+				<div class="col-12 col-md-4 d-flex justify-content-start align-items-center">
+					<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+						<img src="../img/logo/f_logo.svg" style="max-width: 200px;" alt="footer">
+					</a>
+				</div>
+				<ul class="pe-0 px-3 py-3 py-sm-0 col-12 col-md-4 nav align-items-center text-size-12">
+					<li class="nav-item col-12 mb-sm-2">
+						(주)뺏슈 대표이사 : 홍길동 <br>통신판매 신고번호 : 2023-서울강남-1234 <br>사업자 등록번호 : 123-45-6789<br> 
+					</li>
+					<li class="nav-item col-12 mb-sm-2">주소 : 서울특별시 가나다구 라바사로 123 (가나빌딩) 3층 <br>메일 : hongildong1234@gmail.com</li>
+					<li class="nav-item col-12 mb-sm-2 copy"><b>copyright © bbatsue. All rights reserved.</b></li>
+				</ul>
+				<ul class="col-12 col-md-4 ps-md-5 text-size-12">
+					<li class="mb-1">고객문의 02-123-5678</li>
+					<li class="mb-1">점심시간 PM 12:00 ~ PM 01:00</li>
+					<li class="mb-1">평일 상담 AM 10:00 ~ PM 04:30</li>
+					<li><span class="text-light text-size-12">국민은행</span> 123456-78-912345</li>
+					<li><span class="text-light text-size-12">입금자명</span> 홍길동</li>
+				</ul>
+			</footer>
+		</div>
+	</footer>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script>
+		let menu = document.querySelector('#all_menu');
+		let canvas = document.querySelector('#offcanvasStart');
+		let closeBtn = document.querySelector('.btn-close');
+		let menuClickHandler = (event) => {
+			event.preventDefault();
+			canvas.style.transform = 'translate(0)';
+			canvas.style.visibility = 'visible';
+		}
+		let closeBtnClickHandler = () => {
+			canvas.style.transform = 'translate(-100%)';
+			canvas.style.visibility = 'hidden';
+		}
+		menu.addEventListener("click", menuClickHandler);
+		closeBtn.addEventListener('click', closeBtnClickHandler);
+	</script>
+</body>
+</html>
