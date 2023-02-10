@@ -1,11 +1,8 @@
 @charset "UTF-8";
 /* header */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-header {
-  height: 150px;
-}
-header .logo {
-  line-height: 150px;
+.header .logo {
+  height: 54px;
 }
 
 /* login */
@@ -34,8 +31,8 @@ header .logo {
   color: #999;
 }
 #login .login_form form .user_info .save_id label {
-  color: #292922;
   font-size: 14px;
+  color: #333;
   margin-left: 5px;
 }
 #login .login_form form .user_info ul li:nth-child(2) {
@@ -55,19 +52,99 @@ header .logo {
   right: 10px;
 }
 #login .login_form form .user_info ul li:nth-child(2):after {
-  left: 10px;
+  left: 11px;
 }
 #login .login_form form .user_info ul li a {
-  color: #292922;
-  text-decoration: none;
   font-size: 14px;
+  color: #333;
+  text-decoration: none;
 }
 #login .login_form form .d-grid {
-  padding-top: 60px;
+  padding: 60px 0 278px;
 }
-#login .login_form form .d-grid .login {
+#login .login_form form .d-grid .login, #login .login_form form .d-grid .kakao_login {
   height: 70px;
   font-size: 26px;
+}
+#login .login_form form .d-grid .kakao_login {
+  margin-top: 12px;
+  background-color: #f7e409;
+  position: relative;
+}
+#login .login_form form .d-grid .kakao_login img {
+  width: 42px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+#login .login_form form .d-grid p {
+  margin-top: 20px;
+  color: #999;
+  font-size: 14px;
+  position: relative;
+}
+#login .login_form form .d-grid p:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  z-index: -1;
+}
+#login .login_form form .d-grid p span {
+  background-color: #fff;
+  padding: 0 5px;
+}
+#login .login_form form .kakao_sink p {
+  border-top: 2px solid #000;
+  padding: 20px 0 3px;
+}
+#login .login_form form .kakao_sink ul li:nth-child(1) {
+  font-size: 12px;
+}
+#login .login_form form .kakao_sink ul li:nth-child(2) {
+  font-size: 12px;
+  color: #ccc;
+}
+@media (max-width: 767px) {
+  #login .login_form {
+    padding: 100px 60px 50px;
+  }
+}
+
+/* footer */
+.footer {
+  height: 70px;
+  align-items: center;
+}
+.footer .info ul li:nth-child(2) {
+  position: relative;
+  padding: 0 20px;
+}
+.footer .info ul li:nth-child(2):before, .footer .info ul li:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: #999;
+}
+.footer .info ul li:nth-child(2):before {
+  right: 10px;
+}
+.footer .info ul li:nth-child(2):after {
+  left: 11px;
+}
+.footer .info ul li a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+.footer .copy {
+  font-size: 12px;
 }
 
 * {
@@ -86,7 +163,7 @@ ul, ol, li {
 
 a {
   text-decoration: none;
-  color: #292922;
+  color: #333;
 }
 
 /*!

@@ -1,17 +1,55 @@
+@charset "utf-8";
+
+// mixin
+@mixin position($position, $padding){
+    position: $position;
+    padding: $padding;
+}
+@mixin line($cont, $positionab, $top, $display, $width, $height, $bgColor){
+    content: $cont;
+    position: $positionab;
+    top: $top;
+    display: $display;
+    width: $width;
+    height: $height;
+    background-color: $bgColor;
+}
+@mixin fontsizeColor($fontSize, $color){
+    font-size: $fontSize;
+    color: $color;
+}
+@mixin desktop(){
+    @media (min-width: $desktop){
+        @content;
+    }
+} 
+@mixin tablet(){
+    @media (min-width: ($mobile + 1)) and (max-width: $tablet){
+        @content;
+    }
+}
+@mixin mobile(){
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+
+// responsive
+$mobile: 767px;
+$tablet: 1023px;
+$desktop: 1024px;
 // var
 $primary: #FFFCF1;
 $light: gray;
-$text-color: #292922;
+$text-color: #333;
 $secondary: #9E6934;
 
 /* header */
-header {
-    height: 150px;
-
-    .logo {
-        line-height: 150px;
+.header {
+    & .logo {
+        height: 54px;
     }
-} 
+}
 
 /* login */
 #login {
@@ -38,55 +76,116 @@ header {
                 margin-bottom: 10px;
             }
             & label {
-                font-size: 16px;
-                color: #999;
+                @include fontsizeColor(16px, #999);
             }
             & .user_info {
                 & .save_id { 
                     label {
-                        color: $text-color;
-                        font-size: 14px;
+                        @include fontsizeColor(14px, $text-color);
                         margin-left: 5px;
                     }
                 }
                 ul li:nth-child(2){
-                    position: relative;
-                    padding: 0 20px;
-                }
-                ul li:nth-child(2):before, ul li:nth-child(2):after {
-                    content: "";
-                    position: absolute;
-                    top: 8px;
-                    display: block;
-                    width: 1px; 
-                    height: 10px;
-                    background-color: #999;
-                }
-                ul li:nth-child(2):before {
-                    right: 10px;
-                }
-                ul li:nth-child(2):after {
-                    left: 10px;
+                    @include position(relative, 0 20px);
+                    &:before, &:after {
+                        @include line("", absolute, 8px, block, 1px, 10px, #999);
+                    }
+                    &:before {
+                        right: 10px;
+                    }
+                    &:after {
+                        left: 11px;
+                    }
                 }
                 ul li a {
-                    color: $text-color;
+                    @include fontsizeColor(14px, $text-color);
                     text-decoration: none;
-                    font-size: 14px;
                 }
             } // user_info
             & .d-grid {
-                padding-top: 60px;
-                & .login {
+                padding: 60px 0 278px;
+                & .login, & .kakao_login {
                     height: 70px;
                     font-size: 26px;
+                }
+                & .kakao_login {
+                    margin-top: 12px;
+                    background-color: #f7e409;
+                    position: relative;
+                    & img {
+                        width: 42px;
+                        position: absolute;
+                        top: 15px;
+                        left: 20px;
+                    }
+                }
+                & p {
+                    margin-top: 20px;
+                    color: #999;
+                    font-size: 14px;
+                    position: relative;
+                    &:after {
+                        @include line("", absolute, 10px, block, 100%, 1px, #999);
+                        z-index: -1;
+                    }
+                    & span {
+                        background-color: #fff;
+                        padding: 0 5px;
+                        
+                    }
+                }
+            } // login button
+            & .kakao_sink {
+                & p {
+                    border-top: 2px solid #000;
+                    padding: 20px 0 3px;
+                }
+                & ul li {
+                    &:nth-child(1){
+                        font-size: 12px;
+                    }
+                    &:nth-child(2){
+                        font-size: 12px;
+                        color: #ccc;
+                    }
                 }
             }
         } // form
     } // login_form
+    
+    @include mobile {
+        & .login_form {
+            padding: 100px 60px 50px;
+        }
+    } // responsive 768px
 }
 
-@import "./font";
-@import "./reset";
-@import "./mixin";
-@import "./variable";
+/* footer */
+.footer {
+    height: 70px;
+    align-items: center;
+    & .info ul li:nth-child(2) {
+        @include position(relative, 0 20px);
+        &:before, &:after {
+            @include line("", absolute, 8px, block, 1px, 10px, #999);
+        }
+        &:before {
+            right: 10px;
+        }
+        &:after {
+            left: 11px;
+        }
+    }
+    & .info ul li a {
+        @include fontsizeColor(14px, $text-color);
+        text-decoration: none;
+    }
+    & .copy {
+        font-size: 12px;
+    }
+}
+
+@import "font";
+@import "reset";
+@import "variable";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
