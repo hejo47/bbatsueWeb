@@ -83,6 +83,11 @@ a.navigation-pills:hover {
   line-height: 1.2;
 }
 
+.nav-link {
+  width: 105px;
+  height: 40px;
+}
+
 * {
   font-family: "Noto Sans KR", "Roboto", sans-serif;
 }
