@@ -59,6 +59,7 @@ $secondary: #9E6934;
         padding: 100px 112px 50px;
         & .title {
             font-size: 42px;
+            font-weight: bold;
             padding-bottom: 60px;
         }
         & form {
@@ -153,9 +154,59 @@ $secondary: #9E6934;
         } // form
     } // login_form
     
+    @include tablet {
+        & .login_form {
+            padding: 100px 80px 50px;
+            & .title {
+                font-size: 36px;
+                padding-bottom: 60px;
+            }
+            & form {
+                & .d-grid {
+                    padding-bottom: 200px;
+                    & .login, & .kakao_login {
+                        height: 60px;
+                        font-size: 20px;
+                    }
+                    & .kakao_login {
+                        & img {
+                            width: 36px;
+                            position: absolute;
+                            top: 12px;
+                            left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    } // responsive 992px
     @include mobile {
         & .login_form {
-            padding: 100px 60px 50px;
+            padding: 80px 40px 50px;
+            & .title {
+                font-size: 30px;
+                padding-bottom: 40px;
+            }
+            & form {
+                & .d-grid {
+                    & .login, & .kakao_login {
+                        height: 60px;
+                        font-size: 18px;
+                    }
+                    & p {
+                        margin-top: 12px;
+                        font-size: 12px;
+                    }
+                    & .kakao_login {
+                        & img {
+                            width: 24px;
+                            position: absolute;
+                            top: 18px;
+                            left: 20px;
+                        }
+                    }
+                }
+            }
         }
     } // responsive 768px
 }
