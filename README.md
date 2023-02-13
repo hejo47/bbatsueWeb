@@ -1,7 +1,7 @@
 # 작업 페이지
-<p>메인: <a href="">/</a></p>
-<p>로그인: <a href=""></a></p>
-<p>브랜드 소개: <a href=""></a></p>
+<p>메인: <a href="https://bbatsue-web.vercel.app/">https://bbatsue-web.vercel.app/</a></p>
+<p>로그인: <a href="https://bbatsue-web.vercel.app/sub/sub_login.html">https://bbatsue-web.vercel.app/sub/sub_login.html</a></p>
+<p>브랜드 소개: <a href="https://bbatsue-web.vercel.app/sub/about.html">https://bbatsue-web.vercel.app/sub/about.html</a></p>
 <p>제품 리스트: <a href=""></a></p>
 <p>제품 디테일: <a href=""></a></p>
 
