@@ -13,6 +13,7 @@
 }
 #login .login_form .title {
   font-size: 42px;
+  font-weight: bold;
   padding-bottom: 60px;
 }
 #login .login_form form .user_account input {
@@ -108,9 +109,49 @@
   font-size: 12px;
   color: #ccc;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #login .login_form {
+    padding: 100px 80px 50px;
+  }
+  #login .login_form .title {
+    font-size: 36px;
+    padding-bottom: 60px;
+  }
+  #login .login_form form .d-grid {
+    padding-bottom: 200px;
+  }
+  #login .login_form form .d-grid .login, #login .login_form form .d-grid .kakao_login {
+    height: 60px;
+    font-size: 20px;
+  }
+  #login .login_form form .d-grid .kakao_login img {
+    width: 36px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+  }
+}
 @media (max-width: 767px) {
   #login .login_form {
-    padding: 100px 60px 50px;
+    padding: 80px 40px 50px;
+  }
+  #login .login_form .title {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+  #login .login_form form .d-grid .login, #login .login_form form .d-grid .kakao_login {
+    height: 60px;
+    font-size: 18px;
+  }
+  #login .login_form form .d-grid p {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  #login .login_form form .d-grid .kakao_login img {
+    width: 24px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
   }
 }
 
