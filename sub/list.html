@@ -103,9 +103,9 @@
         <div class="container">
 
             <nav class="navigation navigation-pills" id="pills-tab" role="tablist">
-                <a class="nav-link active" id="pills-popular-tab" data-bs-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">인기제품</a>
-                <a class="nav-link" id="pills-new-tab" data-bs-toggle="pill" href="#pills-new" role="tab" aria-controls="pills-new" aria-selected="false">신제품</a>
-                <a class="nav-link" id="pills-bread-tab" data-bs-toggle="pill" href="#pills-bread" role="tab" aria-controls="pills-bread" aria-selected="false">빵</a>
+                <a class="nav-link active me-3" id="pills-popular-tab" data-bs-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">인기제품</a>
+                <a class="nav-link me-3" id="pills-new-tab" data-bs-toggle="pill" href="#pills-new" role="tab" aria-controls="pills-new" aria-selected="false">신제품</a>
+                <a class="nav-link me-3" id="pills-bread-tab" data-bs-toggle="pill" href="#pills-bread" role="tab" aria-controls="pills-bread" aria-selected="false">빵</a>
                 <a class="nav-link" id="pills-dessert-tab" data-bs-toggle="pill" href="#pills-dessert" role="tab" aria-controls="pills-dessert" aria-selected="false">디저트</a>
                 
               </nav>
@@ -121,7 +121,13 @@
                                 <!-- <h1 class="text-center section-text-color">디저트</h1> -->
                             </div>
                             <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                                <a href="#" class="text-color text-decoration-none">인기순|리뷰순|추천순  <img src="../img/icon/arrow_right.svg" alt="view more"></a>
+                                <!-- <a href="#" class="text-color text-decoration-none">인기순|리뷰순|추천순  -->
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                                        <button type="button" class="btn btn-primary">인기순</button>
+                                        <button type="button" class="btn btn-primary">리뷰순</button>
+                                        <button type="button" class="btn btn-primary">추천순</button>
+                                      </div>
+                                <!-- </a> -->
                             </div>
                         </div>
                         <div class="row product-item-list">
