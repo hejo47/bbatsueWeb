@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.product-item:hover img {
+  transform: scale(1.1);
+}
+.product-item:hover .product-item-text {
+  color: #9E6934;
+}
 .product-item-img {
   width: 100%;
   position: relative;
@@ -9,6 +15,10 @@
 }
 .product-item-img img {
   width: 100%;
+  transition: 0.5s ease all;
+}
+.product-item-text {
+  transition: 0.5s all ease;
 }
 .product-item-text .red {
   color: #F27979;
