@@ -1,10 +1,16 @@
+# 작업 페이지
+<p>메인: <a href="https://bbatsue-web.vercel.app/">https://bbatsue-web.vercel.app/</a></p>
+<p>로그인: <a href="https://bbatsue-web.vercel.app/sub/sub_login.html">https://bbatsue-web.vercel.app/sub/sub_login.html</a></p>
+<p>브랜드 소개: <a href="https://bbatsue-web.vercel.app/sub/about.html">https://bbatsue-web.vercel.app/sub/about.html</a></p>
+<p>제품 리스트: <a href=""></a></p>
+<p>제품 디테일: <a href=""></a></p>
+
 # 규칙
 <p>1. 파일 이름은 'sub_***.html' 로 작성 바람.</p>
 <p>2. 커밋 내용은 '230206 [홍길동] 커밋 내용' 으로 작성 바람.</p>
 <p>3. CSS 작업은 충돌 나지 않게 새로운 파일을 생성하고 'sub_***.scss' 으로 작성 후 컴파일 바람.</p>
 <p>4. 만들 클래스의 이름은 스네이크 케이스 (ex] map_body) 로 작성 바람.</P>
 <p>5. 만들 클래스는 common에 작성 바람. (무조건 pull 받기)</P>
-
 
 # Vercel URL
 <a href="https://bbatsue-web.vercel.app/" target="_blank">https://bbatsue-web.vercel.app/</a>
