@@ -25,6 +25,7 @@
 	<title>브랜드소개</title>
 	<link rel="stylesheet" href="../css/detail.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="../js/food.js"></script>
 </head>
 <body>
 	<header class="bg-primary py-4">
@@ -106,14 +107,13 @@
 				<div class="product-item-img">
 					<img src="../img/detail/detail.png" class="col-xxl-6 col-xl-6 col-sm-8" alt="product1">
 					<div class=" col-xxl-6 col-xl-6 col-sm-4">
-					<span class="name">남녀노소 입맛저격 크림 카스테라 5종
-					</span>
-					<div class="product-item-text mt-8 text-end d-block"> <span class="gray m-30">1,2000원</span><span class="red">25% <span class="black">8,900원</div>
+					<span class="name" id="product_name"> </span>
+					<div class="product-item-text mt-8 text-end d-block"> <span class="gray m-30">2,000원</span><span class="red">25% <span class="black">2,200원</div>
 					<div class="price">
 						<p class="m-4">
 							<ul>
 								<li>수량 <input type="number" min="1" max="15"></li>
-								<li class="py-2">총 가격 <span class="price-right">8,900원</span></li>
+								<li class="py-2">총 가격 <span class="price-right">2,000원</span></li>
 								<li>적립</li>
 							</ul>
 						</p>
@@ -135,6 +135,48 @@
 					<span class="col-4 tap">리뷰</span>
 					<span class="col-4 tap">문의</span>
 					<div class="text-center">
+						<table class="table">
+							<tr>
+								<th scope="col">1회 제공량</th>
+								<td scope="col" id="product_serv"></td>
+							</tr>
+							<tr>
+								<th scope="col">열량</th>
+								<td scope="col" id="product_info1"></td>
+							</tr>
+							<tr>
+								<th scope="col">탄수화물</th>
+								<td scope="col" id="product_info2"></td>
+							</tr>
+							<tr>
+								<th scope="col">단백질</th>
+								<td scope="col" id="product_info3"></td>
+							</tr>
+							<tr>
+								<th scope="col">지방</th>
+								<td scope="col" id="product_info4"></td>
+							</tr>
+							<tr>
+								<th scope="col">당류</th>
+								<td scope="col" id="product_info5"></td>
+							</tr>
+							<tr>
+								<th scope="col">나트륨</th>
+								<td scope="col" id="product_info6"></td>
+							</tr>
+							<tr>
+								<th scope="col">콜레스테롤</th>
+								<td scope="col" id="product_info7"></td>
+							</tr>
+							<tr>
+								<th scope="col">포화지방산</th>
+								<td scope="col" id="product_info8"></td>
+							</tr>
+							<tr>
+								<th scope="col">트랜스지방산</th>
+								<td scope="col" id="product_info9"></td>
+							</tr>
+						</table>
 						<img src="../img/detail/main.png" class="w-67 text-center mt-4 mb-5" alt="product1">			
 				     </div>
 					 <span class="col-4 tap">상세정보</span>
@@ -198,8 +240,10 @@
 			</footer>
 		</div>
 	</footer>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 	<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	
 	<script>
 		AOS.init();
 	</script>
