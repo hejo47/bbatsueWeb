@@ -2,8 +2,8 @@
 <p>메인: <a href="https://bbatsue-web.vercel.app/">https://bbatsue-web.vercel.app/</a></p>
 <p>로그인: <a href="https://bbatsue-web.vercel.app/sub/sub_login.html">https://bbatsue-web.vercel.app/sub/sub_login.html</a></p>
 <p>브랜드 소개: <a href="https://bbatsue-web.vercel.app/sub/about.html">https://bbatsue-web.vercel.app/sub/about.html</a></p>
-<p>제품 리스트: <a href=""></a></p>
-<p>제품 디테일: <a href=""></a></p>
+<p>제품 리스트: <a href="https://bbatsue-web.vercel.app/sub/list.html"></a>https://bbatsue-web.vercel.app/sub/list.html</p>
+<p>제품 디테일: <a href="https://bbatsue-web.vercel.app/sub/detail.html"></a>https://bbatsue-web.vercel.app/sub/detail.html</p>
 
 # 규칙
 <p>1. 파일 이름은 'sub_***.html' 로 작성 바람.</p>
