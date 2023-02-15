@@ -25,5 +25,4 @@ function api_data(data) {
   document.querySelector("#product_info7").innerText = `${data.body.items[items_num].NUTR_CONT7}mg`;
   document.querySelector("#product_info8").innerText = `${data.body.items[items_num].NUTR_CONT8}g`;
   document.querySelector("#product_info9").innerText = `${data.body.items[items_num].NUTR_CONT9}g`;
-
 }
