@@ -27,9 +27,9 @@
 	<link rel="stylesheet" href="css/main.min.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-	<script src="./js/food.js"></script>
 </head>
 <body>
+	<div class="offcanvas-over"></div>
 	<header class="bg-primary py-4">
 		<div class="container">
 			<div class="row">
@@ -39,8 +39,8 @@
 				</div>
 				<div class="col-lg-4 d-flex justify-content-end align-items-center">
 					<ul class="d-flex list-unstyled my-0">
-						<li><a href="#" class="text-color text-decoration-none mx-2">회원가입</a></li>
-						<li><a href="sub/sub_login.html" class="text-color text-decoration-none mx-2">로그인</a></li>
+						<li><a href="./sub/sub_login.html" class="text-color text-decoration-none mx-2">회원가입</a></li>
+						<li><a href="./sub/sub_login.html" class="text-color text-decoration-none mx-2">로그인</a></li>
 						<li><a href="#" class="text-color text-decoration-none mx-2">고객센터</a></li>
 					</ul>
 				</div>
@@ -65,7 +65,7 @@
 						<ul class="px-0 ps-2 list-unstyled">
 							<li class="py-2"><a href="./sub/about.html" class="text-color text-decoration-none">브랜드 소개</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">새소식</a></li>
-							<li class="py-2"><a href="sub/list.html" class="text-color text-decoration-none">제품</a></li>
+							<li class="py-2"><a href="./sub/list.html" class="text-color text-decoration-none">제품</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">정기 배송</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">선물</a></li>
 							<li class="py-2"><a href="#" class="text-color text-decoration-none">이벤트</a></li>
@@ -83,10 +83,11 @@
 						</ul>
 					</div>
 				</div>
+
 				<div class="d-none col-md-8 col-sm-2 logo d-sm-flex justify-content-sm-between justify-content-md-center align-items-center">
 				<ul class="d-none d-lg-flex my-0 list-unstyled">
 					<li><a href="./sub/about.html" class="text-color text-decoration-none mx-3">브랜드 소개</a></li>
-					<li><a href="sub/list.html" class="text-color text-decoration-none mx-3">제품</a></li>
+					<li><a href="./sub/list.html" class="text-color text-decoration-none mx-3">제품</a></li>
 					<li><a href="#" class="text-color text-decoration-none mx-3">정기 배송</a></li>
 					<li><a href="#" class="text-color text-decoration-none mx-3">선물</a></li>
 					<li><a href="#" class="text-color text-decoration-none mx-3">이벤트</a></li>
@@ -102,34 +103,6 @@
 			</div>
 		</div>
 	</header>
-	<!-- <section>
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="./img/main/main_slide1.png" class="d-block w-100" alt="main-slide-img1">
-				</div>
-				<div class="carousel-item">
-					<img src="./img/main/main_slide1.png" class="d-block w-100" alt="main-slide-img2">
-				</div>
-				<div class="carousel-item">
-					<img src="./img/main/main_slide1.png" class="d-block w-100" alt="main-slide-img3">
-				</div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
-	</section> -->
 	<section class="main-slider">
 		<div class="swiper">
 			<div class="swiper-wrapper">
@@ -140,16 +113,6 @@
 					<img src="./img/main/main_slide1.png" alt="홈페이지 슬라이더 사진2" class="w-100" />
 				</div>
 			</div>
-			<!-- <div class="main-slider-txtbox">
-				<div class="main-slider-txtbox-left">
-	
-				</div>
-				<div class="main-slider-txtbox-right">
-					<div class="swiper-scrollbar"></div>
-					<div class="swiper-pagination"></div>
-					<button id="swiper-pause-button"><i class="ri-pause-circle-fill"></i></button>
-				</div>
-			</div> -->
 		</div>
 	</section>
 	<section class="section-padding" data-aos="fade-up" data-aos-duration="2500">
@@ -160,26 +123,26 @@
 					<h1 class="text-center section-text-color section-title">BEST</h1>
 				</div>
 				<div class="col-lg-4 d-flex justify-content-end align-items-center">
-					<a href="#" class="text-color text-decoration-none">더보기  <img src="./img/icon/arrow_right.svg" alt="view more"></a>
+					<a href="./sub/list.html" class="text-color text-decoration-none">더보기  <img src="./img/icon/arrow_right.svg" alt="view more"></a>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row product-item-list">
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
 							<img src="./img/product/best1.jpg" alt="best1">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
 						</div>
 						<p class="product-item-text mt-3">
-							<b></b><br>
-							<span class="red">10%</span> <b>4,900원</b> <b class="bread_sweet"></b> <del class="text-size-12">5,500원</del>
+							<b>크림마들렌</b><br>
+							<span class="red">10%</span> <b>2,000원</b> <del class="text-size-12">2,200원</del>
 						</p>
 					</a>
 				</div>
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
 							<img src="./img/product/best2.jpg" alt="best2">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
@@ -191,7 +154,7 @@
 					</a>
 				</div>
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
 							<img src="./img/product/best3.jpg" alt="best3">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
@@ -203,7 +166,7 @@
 					</a>
 				</div>
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
 							<img src="./img/product/best4.jpg" alt="best4">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
@@ -217,9 +180,9 @@
 			</div>
 			<div class="row product-item-list">
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
-							<img src="./img/product/best5.jpg" alt="best5">
+							<img src="./img/product/best5.png" alt="best5">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
 						</div>
 						<p class="product-item-text mt-3">
@@ -229,9 +192,9 @@
 					</a>
 				</div>
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
-							<img src="./img/product/best6.jpg" alt="best6">
+							<img src="./img/product/best6.png" alt="best6">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
 						</div>
 						<p class="product-item-text mt-3">
@@ -241,19 +204,19 @@
 					</a>
 				</div>
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
 							<img src="./img/product/best7.jpg" alt="best7">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
 						</div>
 						<p class="product-item-text mt-3">
 							<b>저당녹차케이크</b><br>
-							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+							<span class="red">10%</span> <b>7,000원</b> <del class="text-size-12">7,800원</del>
 						</p>
 					</a>
 				</div>
 				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
-					<a href="#" class="text-decoration-none text-color">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
 						<div class="product-item-img">
 							<img src="./img/product/best8.png" alt="best8">
 							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
@@ -417,16 +380,26 @@
 			<div class="row event-item-list">
 				<div class="col-lg-12">
 					<div class="row">
-						<div class="card">
+						<div class="card px-0">
 							<div class="row g-0">
 							  <div class="col-6 col-sm-6">
 								<img src="./img/product/review3.jpg" class="img-fluid w-100" alt="card-horizontal-image">
 							  </div>
 							  <div class="col-6 col-sm-6">
 								<div class="card-body">
-								  <h5 class="card-title">Card title</h5>
-								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								  <h1 class="card-title">뺏슈 케이크 리뷰</h1>
+								  <p class="card-text">우리는 얼그레이 케이크를 골랐다. 인스타에서 가장 많이 보였던 거 같다. <br>
+									케이크는 직접 집어서 접시에 올리는 것이었다. <br>
+									정말 많은 사람들이 상상한다는 카페에서 음료와 케이크 쏟기, 무서웠다 (ⅈ▱ⅈ) <br>
+									하지만 이런 건 무심하게 들어서 툭 놔 줘야 잘 되는 것이다.<br>
+									닭 인형과 사진을 찍어줬다. <br>
+									얼그레이 케이크, 겉 보기에는 보라색 맛이 많이 날 것 같은데 그렇지 않다. <br>
+									역시 얼그레이 케이크야. <br>
+									다음엔 다른 케이크도 먹어 봐야지. <br>
+									생각 같아선 종류별로 한 조각씩 8조각 시켜놓고 한 판 만들고 싶다. <br>
+									원없이 퍼먹고 싶다 ㅜㅜ<br>
+									</p>
+								  <p class="card-text"><small class="text-muted">2021년 11월 23일</small></p>
 								</div>
 							  </div>
 							</div>
@@ -573,14 +546,17 @@
 		let menu = document.querySelector('#all_menu');
 		let canvas = document.querySelector('#offcanvasStart');
 		let closeBtn = document.querySelector('.btn-close');
+		let over = document.querySelector('.offcanvas-over');
 		let menuClickHandler = (event) => {
 			event.preventDefault();
 			canvas.style.transform = 'translate(0)';
 			canvas.style.visibility = 'visible';
+			over.style.display = 'block';
 		}
 		let closeBtnClickHandler = () => {
 			canvas.style.transform = 'translate(-100%)';
 			canvas.style.visibility = 'hidden';
+			over.style.display = 'none';
 		}
 		menu.addEventListener("click", menuClickHandler);
 		closeBtn.addEventListener('click', closeBtnClickHandler);
