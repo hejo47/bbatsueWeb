@@ -104,17 +104,21 @@
 	<section class="section-padding-3" data-aos="fade-up" data-aos-duration="2500">
 	<div class="container">
 		<div class="row product-item-list">
-			<div class="col-6 col-lg-8 col-sm-12 col-xl-12 col-xxl-12 product-item-3">
+			<div class="product-item-3">
 				<div class="product-item-img">
-					<img src="../img/detail/detail.png" class="col-xxl-6 col-xl-6 col-sm-8" alt="product1">
-					<div class=" col-xxl-6 col-xl-6 col-sm-4">
+					<img src="../img/detail/detail.png" class="col-6 " alt="product1">
+					<div class=" col-6 ">
 					<span class="name" id="product_name"> </span>
-					<div class="product-item-text mt-8 text-end d-block"> <span class="gray m-30">2,000원</span><span class="red">25% <span class="black">2,200원</div>
+					<div class="product-item-text mt-8 text-end d-block"> <span class="gray m-30 ">2,000원</span><span class="red">25% <span class="black">2,200원</div>
 					<div class="price">
 						<p class="m-4">
 							<ul>
-								<li>수량 <input type="number" min="1" max="15"></li>
-								<li class="py-2">총 가격 <span class="price-right">2,000원</span></li>
+								<li>수량 <input type='button' class="plus"
+									onclick='count("plus")'
+									value='+'/><span id='result2'>1</span><input type='button' class="minus"
+									onclick='count("minus")'
+									value='-'/></li>
+								<li class="py-3">총 가격 <span id="result">2,200원</span></li>
 								<li>적립</li>
 							</ul>
 						</p>
@@ -180,6 +184,7 @@
 						</table>
 						<img src="../img/detail/main.png" class="w-67 text-center mt-4 mb-5" alt="product1">			
 				     </div>
+					 <div><button class="more mb-5">상품 더보기</button>	</div>
 					 <span class="col-4 tap">상세정보</span>
 					<span class="col-4 brown">리뷰</span>
 					<span class="col-4 tap">문의</span>
@@ -244,6 +249,7 @@
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 	<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="../js/buttonpls.js"></script>
 	
 	<script>
 		AOS.init();
