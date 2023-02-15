@@ -25,7 +25,185 @@
 	<title>제품</title>
 	<link rel="stylesheet" href="../css/list.min.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #eee;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.2)
+  );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8cf;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28f;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child {
+  border-radius: 0.5em 0 0 0.5em;
+}
+.button-group .button:last-child {
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+/* ---- isotope ---- */
+
+.grid {
+  border: 1px solid #333;
+}
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.alkali {
+  background: #f00;
+  background: hsl(0, 100%, 50%);
+}
+.element-item.alkaline-earth {
+  background: #f80;
+  background: hsl(36, 100%, 50%);
+}
+.element-item.lanthanoid {
+  background: #ff0;
+  background: hsl(72, 100%, 50%);
+}
+.element-item.actinoid {
+  background: #0f0;
+  background: hsl(108, 100%, 50%);
+}
+.element-item.transition {
+  background: #0f8;
+  background: hsl(144, 100%, 50%);
+}
+.element-item.post-transition {
+  background: #0ff;
+  background: hsl(180, 100%, 50%);
+}
+.element-item.metalloid {
+  background: #08f;
+  background: hsl(216, 100%, 50%);
+}
+.element-item.diatomic {
+  background: #00f;
+  background: hsl(252, 100%, 50%);
+}
+.element-item.halogen {
+  background: #f0f;
+  background: hsl(288, 100%, 50%);
+}
+.element-item.noble-gas {
+  background: #f08;
+  background: hsl(324, 100%, 50%);
+}
+
+    </style>
+  
 <body>
 	<header class="bg-primary py-4">
 		<div class="container">
@@ -139,7 +317,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>고단백 두유크림 단팥빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,410원</b> <del class="text-size-12">4,900원</del>
                                     </p>
                                 </a>
                             </div>
@@ -151,7 +329,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 귀리우유식빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -163,7 +341,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 아몬드우유 모닝빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>2,970원</b> <del class="text-size-12">3,300원</del>
                                     </p>
                                 </a>
                             </div>
@@ -175,7 +353,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 크로와상</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,230원</b> <del class="text-size-12">4,700원</del>
                                     </p>
                                 </a>
                             </div>
@@ -189,7 +367,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>고단백 참깨번 샌드위치</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>6,750원</b> <del class="text-size-12">7,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -201,7 +379,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 미니바게트</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -213,7 +391,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 두유크림 마카롱</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>2,700원</b> <del class="text-size-12">3,000원</del>
                                     </p>
                                 </a>
                             </div>
@@ -224,8 +402,8 @@
                                         <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
                                     </div>
                                     <p class="product-item-text mt-3">
-                                        <b>저탄수 귀리우유크림 당근케이크</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <b>귀리우유크림 당근케이크</b><br>
+                                        <span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -249,7 +427,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 귀리우유식빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -261,7 +439,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 두유크림 마카롱</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>2,700원</b> <del class="text-size-12">3,000원</del>
                                     </p>
                                 </a>
                             </div>
@@ -273,7 +451,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>고단백 두유크림 단팥빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,410원</b> <del class="text-size-12">4,900원</del>
                                     </p>
                                 </a>
                             </div>
@@ -285,7 +463,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 흑임자크림빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -306,7 +484,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 아몬드우유 모닝빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>2,970원</b> <del class="text-size-12">3,300원</del>
                                     </p>
                                 </a>
                             </div>
@@ -330,7 +508,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>고단백 참깨번 샌드위치</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>6,750원</b> <del class="text-size-12">7,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -342,7 +520,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 깜빠뉴 샌드위치</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>5,670원</b> <del class="text-size-12">6,300원</del>
                                     </p>
                                 </a>
                             </div>
@@ -356,7 +534,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 귀리우유식빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -368,7 +546,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 미니바게트</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -392,7 +570,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>고단백 아몬드우유 크로와상</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,230원</b> <del class="text-size-12">4,700원</del>
                                     </p>
                                 </a>
                             </div>
@@ -413,7 +591,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>고단백 두유크림 단팥빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,410원</b> <del class="text-size-12">4,900원</del>
                                     </p>
                                 </a>
                             </div>
@@ -425,7 +603,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 고단백 흑임자크림빵</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -449,7 +627,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>고단백 아몬드우유 녹차쿠키</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>1,890원</b> <del class="text-size-12">2,100원</del>
                                     </p>
                                 </a>
                             </div>
@@ -462,8 +640,8 @@
                                         <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
                                     </div>
                                     <p class="product-item-text mt-3">
-                                        <b>저탄수 귀리우유크림 당근마들렌</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <b>저탄수 두유크림 당근마들렌</b><br>
+                                        <span class="red">10%</span> <b>3,150원</b> <del class="text-size-12">3,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -475,7 +653,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 귀리우유크림 녹차케이크</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>4,770원</b> <del class="text-size-12">5,300원</del>
                                     </p>
                                 </a>
                             </div>
@@ -487,7 +665,7 @@
                                     </div>
                                     <p class="product-item-text mt-3">
                                         <b>저탄수 두유크림 마카롱</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <span class="red">10%</span> <b>2,700원</b> <del class="text-size-12">3,000원</del>
                                     </p>
                                 </a>
                             </div>
@@ -498,8 +676,8 @@
                                         <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
                                     </div>
                                     <p class="product-item-text mt-3">
-                                        <b>저탄수 귀리우유크림 당근케이크</b><br>
-                                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                                        <b>귀리우유크림 당근케이크</b><br>
+                                        <span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
                                     </p>
                                 </a>
                             </div>
@@ -511,7 +689,8 @@
         </div>
 		
 	</section>
-
+   
+   
 
 	<footer class="border-bottom">
 		<div class="container">
@@ -562,22 +741,6 @@
 	<script>
 		AOS.init();
 	</script>
-	<script>
-		let menu = document.querySelector('#all_menu');
-		let canvas = document.querySelector('#offcanvasStart');
-		let closeBtn = document.querySelector('.btn-close');
-		let menuClickHandler = (event) => {
-			event.preventDefault();
-			canvas.style.transform = 'translate(0)';
-			canvas.style.visibility = 'visible';
-		}
-		let closeBtnClickHandler = () => {
-			canvas.style.transform = 'translate(-100%)';
-			canvas.style.visibility = 'hidden';
-		}
-		menu.addEventListener("click", menuClickHandler);
-		closeBtn.addEventListener('click', closeBtnClickHandler);
-	</script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
         const grid=document.querySelector("#container");
@@ -601,5 +764,30 @@
         })
 
     </script>
+    <script src="https://https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <!-- <script>
+        const grid=document.querySelector("#container");
+        //isotope 초기화
+        const iso=new Isotope(grid,{
+            //조회할 데이터 요소
+            itemSelector:'.ele',
+            layoutMode:'fitRows',
+        })
+        const opt=document.querySelector("#option");
+
+        opt.addEventListener('click',function(e){
+            let key=e.target.parentNode.getAttribute('data-isotope-key');
+            let value=e.target.getAttribute('data-isotope-value');
+            console.log(value);
+            //console.log(e.target.parentNode.getAttribute('data-isotope-key'));
+            //클릭시 필터링할 문자열을 취득
+            iso.options[key]=value;
+            //42번에서 취득한 조건에 맞는 요소만 필터링
+            iso.arrange();
+        })
+
+    </script> -->
+    
+    
 </body>
 </html>
