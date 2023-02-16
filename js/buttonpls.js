@@ -10,9 +10,9 @@ function count(type)  {
     
     // 더하기/빼기
     if(type === 'plus') {
-      number = parseInt(number) + 2+','+200+"원";
+      number = parseInt(number) + 2+","+"000"+"원";
     }else if(type === 'minus')  {
-      number = parseInt(number) - 2+','+200+"원";
+      number = parseInt(number) - 2+','+"000"+"원";
     }
     if(type === 'plus') {
       number2 = parseInt(number2) + 1;
