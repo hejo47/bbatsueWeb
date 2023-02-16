@@ -26,6 +26,16 @@
 }
 
 /* login */
+.login_wrap_overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
 .login_wrap {
   position: absolute;
   top: 300px;
@@ -103,6 +113,17 @@
 }
 .login_wrap #login .login_form_wrap .login_form form .user_info ul li:nth-child(2):after {
   left: 11px;
+}
+@media (max-width: 767px) {
+  .login_wrap #login .login_form_wrap .login_form form .user_info ul li:nth-child(2):before, .login_wrap #login .login_form_wrap .login_form form .user_info ul li:nth-child(2):after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: #999;
+  }
 }
 .login_wrap #login .login_form_wrap .login_form form .user_info ul li a {
   font-size: 14px;
@@ -237,17 +258,6 @@
     padding-top: 10px;
     font-size: 14px;
   }
-}
-
-.login_wrap_overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 1;
-  z-index: 999;
 }
 
 /* footer */
