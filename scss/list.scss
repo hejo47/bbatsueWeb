@@ -128,7 +128,7 @@ button {
   .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
   .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 /* clear fix */
-#grid:after {
+#grid1:after,#grid2:after,#grid3:after,#grid4:after {
     content: '';
     display: block;
     clear: both;

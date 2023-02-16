@@ -28,9 +28,34 @@
 		<script src="../js/food.js"></script>
 	</head>
 	<style>
-		
-		section{
-			background:white;
+		section {
+			background: white;
+		}
+
+		.navigation-pills .nav-link.active,
+		.navigation-pills .show > .nav-link {
+			color: white;
+			background-color: #9e6934;
+			border: 1px solid #9e6934;
+			border-radius: 30px;
+		}
+		a.nav-link:hover {
+			color: white;
+			background-color: #9e6934;
+			border: 1px solid #9e6934;
+			border-radius: 30px;
+		}
+		a.navigation-pills:hover {
+			color: white;
+			background-color: #9e6934;
+			border: 1px solid #9e6934;
+			border-radius: 30px;
+		}
+		.navigation-pills .nav-link {
+			color: #9e6934;
+			background-color: white;
+			border: 1px solid #9e6934;
+			border-radius: 30px;
 		}
 		.button-group {
 			display: inline-flex;
@@ -41,7 +66,7 @@
 			border-radius: 20px;
 			overflow: hidden;
 			float: left;
-			font-size: 0.5rem;
+			font-size: 15px;
 			margin-right: 37px;
 			margin-bottom: -30px;
 		}
@@ -94,29 +119,31 @@
 			font-weight: 500;
 			line-height: 1.2;
 		}
-		.product-item-img{
-			overflow:hidden;
-			border-radius:10px;
+		.product-item-img {
+			overflow: hidden;
+			border-radius: 10px;
 		}
 		.product-item:hover img {
-			
-    transform: scale(1.1);
-}
-.product-item-img img {
-    width: 100%;
-    transition: .5s ease all;
-}
-img, svg {
-    vertical-align: middle;
-}
+			transform: scale(1.1);
+		}
+		.product-item-img img {
+			width: 100%;
+			transition: 0.5s ease all;
+		}
+		img,
+		svg {
+			vertical-align: middle;
+		}
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+		}
+		img {
+			overflow-clip-margin: content-box;
+			overflow: clip;
+		}
 	</style>
 	<body>
 		<header class="bg-primary py-4">
@@ -204,7 +231,7 @@ img {
 				</div>
 			</div>
 		</header>
-		<section class="section-padding-2 section-bg-color" data-aos="fade-up" data-aos-duration="2500">
+		<section class="section-padding-2" data-aos="fade-up" data-aos-duration="2500">
 			<div class="container">
 				<nav class="navigation navigation-pills" id="pills-tab" role="tablist">
 					<a class="nav-link active me-3 text-center" id="pills-popular-tab" data-bs-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">인기제품</a>
@@ -223,13 +250,13 @@ img {
 								<div class="col-lg-4"></div>
 								<div class="col-lg-4 d-flex justify-content-end align-items-center">
 									<div class="button-group sort-by-button-group">
-										<button class="button is-checked" data-sort-value="popular">인기순</button>
-										<button class="button is-checked" data-sort-value="review">리뷰순</button>
-										<button class="button" data-sort-value="recommend">추천순</button>
+										<button class="button is-checked" id="pop" data-sort-value="popular">인기순</button>
+										<button class="button is-checked" id="rev" data-sort-value="review">리뷰순</button>
+										<button class="button" id="rec" data-sort-value="recommend">추천순</button>
 									</div>
 								</div>
 							</div>
-							<div id="grid">
+							<div id="grid1">
 								<div class="row product-item-list">
 									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="first" data-review="1" data-recom="2">
 										<a href="./detail.html" class="text-decoration-none text-color">
@@ -343,13 +370,13 @@ img {
 								<div class="col-lg-4"></div>
 								<div class="col-lg-4 d-flex justify-content-end align-items-center">
 									<div class="button-group sort-by-button-group">
-										<button class="button is-checked" data-sort-value="popular">인기순</button>
-										<button class="button is-checked" data-sort-value="review">리뷰순</button>
-										<button class="button" data-sort-value="recommend">추천순</button>
+										<button class="button is-checked" id="pop" data-sort-value="popular">인기순</button>
+										<button class="button is-checked" id="rev" data-sort-value="review">리뷰순</button>
+										<button class="button" id="rec" data-sort-value="recommend">추천순</button>
 									</div>
 								</div>
 							</div>
-							<div id="grid">
+							<div id="grid2">
 								<div class="row product-item-list">
 									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="second" data-review="3" data-recom="2">
 										<a href="./detail.html" class="text-decoration-none text-color">
@@ -413,110 +440,112 @@ img {
 								<div class="col-lg-4"></div>
 								<div class="col-lg-4 d-flex justify-content-end align-items-center">
 									<div class="button-group sort-by-button-group">
-										<button class="button is-checked" data-sort-value="popular">인기순</button>
-										<button class="button is-checked" data-sort-value="review">리뷰순</button>
-										<button class="button" data-sort-value="recommend">추천순</button>
+										<button class="button is-checked" id="pop" data-sort-value="popular">인기순</button>
+										<button class="button is-checked" id="rev" data-sort-value="review">리뷰순</button>
+										<button class="button" id="rec" data-sort-value="recommend">추천순</button>
 									</div>
 								</div>
 							</div>
-							<div class="row product-item-list">
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="second" data-review="3" data-recom="2">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product1_bread.png" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 아몬드우유 모닝빵</b><br />
-											<span class="red">10%</span> <b>2,970원</b> <del class="text-size-12">3,300원</del>
-										</p>
-									</a>
+							<div id="grid3">
+								<div class="row product-item-list">
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="second" data-review="3" data-recom="2">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product1_bread.png" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 아몬드우유 모닝빵</b><br />
+												<span class="red">10%</span> <b>2,970원</b> <del class="text-size-12">3,300원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fifth" data-review="3" data-recom="1">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product2_bread.png" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 아몬드우유 식빵</b><br />
+												<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="sixth" data-review="3" data-recom="7">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product3_bread.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>고단백 참깨번 샌드위치</b><br />
+												<span class="red">10%</span> <b>6,750원</b> <del class="text-size-12">7,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="seventh" data-review="1" data-recom="6">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product4_bread.jpeg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 깜빠뉴 샌드위치</b><br />
+												<span class="red">10%</span> <b>5,670원</b> <del class="text-size-12">6,300원</del>
+											</p>
+										</a>
+									</div>
 								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fifth" data-review="3" data-recom="1">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product2_bread.png" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 아몬드우유 식빵</b><br />
-											<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="sixth" data-review="3" data-recom="7">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product3_bread.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>고단백 참깨번 샌드위치</b><br />
-											<span class="red">10%</span> <b>6,750원</b> <del class="text-size-12">7,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="seventh" data-review="1" data-recom="6">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product4_bread.jpeg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 깜빠뉴 샌드위치</b><br />
-											<span class="red">10%</span> <b>5,670원</b> <del class="text-size-12">6,300원</del>
-										</p>
-									</a>
-								</div>
-							</div>
-							<div class="row product-item-list">
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="eighth" data-review="2" data-recom="8">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product5_bread.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 고단백 귀리우유식빵</b><br />
-											<span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="second" data-review="2" data-recom="3">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product6_bread.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 고단백 미니바게트</b><br />
-											<span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="third" data-review="1" data-recom="1">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product7_bread.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 고단백 두유식빵</b><br />
-											<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fourth" data-review="2" data-recom="4">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product8_bread.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>고단백 아몬드우유 크로와상</b><br />
-											<span class="red">10%</span> <b>4,230원</b> <del class="text-size-12">4,700원</del>
-										</p>
-									</a>
+								<div class="row product-item-list">
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="eighth" data-review="2" data-recom="8">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product5_bread.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 고단백 귀리우유식빵</b><br />
+												<span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="second" data-review="2" data-recom="3">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product6_bread.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 고단백 미니바게트</b><br />
+												<span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="third" data-review="1" data-recom="1">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product7_bread.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 고단백 두유식빵</b><br />
+												<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fourth" data-review="2" data-recom="4">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product8_bread.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>고단백 아몬드우유 크로와상</b><br />
+												<span class="red">10%</span> <b>4,230원</b> <del class="text-size-12">4,700원</del>
+											</p>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -531,110 +560,112 @@ img {
 								<div class="col-lg-4"></div>
 								<div class="col-lg-4 d-flex justify-content-end align-items-center">
 									<div class="button-group sort-by-button-group">
-										<button class="button is-checked" data-sort-value="popular">인기순</button>
-										<button class="button is-checked" data-sort-value="review">리뷰순</button>
-										<button class="button" data-sort-value="recommend">추천순</button>
+										<button class="button is-checked" id="pop" data-sort-value="popular">인기순</button>
+										<button class="button is-checked" id="rev" data-sort-value="review">리뷰순</button>
+										<button class="button" id="rec" data-sort-value="recommend">추천순</button>
 									</div>
 								</div>
 							</div>
-							<div class="row product-item-list">
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fourth" data-review="2" data-recom="4">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product1_dessert.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>고단백 두유크림 단팥빵</b><br />
-											<span class="red">10%</span> <b>4,410원</b> <del class="text-size-12">4,900원</del>
-										</p>
-									</a>
+							<div id="grid4">
+								<div class="row product-item-list">
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fourth" data-review="2" data-recom="4">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product1_dessert.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>고단백 두유크림 단팥빵</b><br />
+												<span class="red">10%</span> <b>4,410원</b> <del class="text-size-12">4,900원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fifth" data-review="3" data-recom="1">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product2_dessert.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 고단백 흑임자크림빵</b><br />
+												<span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="sixth" data-review="3" data-recom="7">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product3_dessert.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 두유크림 티라미수</b><br />
+												<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="seventh" data-review="1" data-recom="6">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product4_dessert.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>고단백 아몬드우유 녹차쿠키</b><br />
+												<span class="red">10%</span> <b>1,890원</b> <del class="text-size-12">2,100원</del>
+											</p>
+										</a>
+									</div>
 								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="fifth" data-review="3" data-recom="1">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product2_dessert.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 고단백 흑임자크림빵</b><br />
-											<span class="red">10%</span> <b>4,050원</b> <del class="text-size-12">4,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="sixth" data-review="3" data-recom="7">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product3_dessert.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 두유크림 티라미수</b><br />
-											<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="seventh" data-review="1" data-recom="6">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product4_dessert.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>고단백 아몬드우유 녹차쿠키</b><br />
-											<span class="red">10%</span> <b>1,890원</b> <del class="text-size-12">2,100원</del>
-										</p>
-									</a>
-								</div>
-							</div>
-							<div class="row product-item-list">
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="eighth" data-review="2" data-recom="8">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product5_dessert.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 두유크림 당근마들렌</b><br />
-											<span class="red">10%</span> <b>3,150원</b> <del class="text-size-12">3,500원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="first" data-review="1" data-recom="2">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product6_dessert.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 귀리우유크림 녹차케이크</b><br />
-											<span class="red">10%</span> <b>4,770원</b> <del class="text-size-12">5,300원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="second" data-review="2" data-recom="3">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product7_dessert.png" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>저탄수 두유크림 마카롱</b><br />
-											<span class="red">10%</span> <b>2,700원</b> <del class="text-size-12">3,000원</del>
-										</p>
-									</a>
-								</div>
-								<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="third" data-review="1" data-recom="1">
-									<a href="./detail.html" class="text-decoration-none text-color">
-										<div class="product-item-img">
-											<img src="../img/product/product8_dessert.jpg" alt="product1" />
-											<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
-										</div>
-										<p class="product-item-text mt-3">
-											<b>귀리우유크림 당근케이크</b><br />
-											<span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
-										</p>
-									</a>
+								<div class="row product-item-list">
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="eighth" data-review="2" data-recom="8">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product5_dessert.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 두유크림 당근마들렌</b><br />
+												<span class="red">10%</span> <b>3,150원</b> <del class="text-size-12">3,500원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="first" data-review="1" data-recom="2">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product6_dessert.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 귀리우유크림 녹차케이크</b><br />
+												<span class="red">10%</span> <b>4,770원</b> <del class="text-size-12">5,300원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="second" data-review="2" data-recom="3">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product7_dessert.png" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>저탄수 두유크림 마카롱</b><br />
+												<span class="red">10%</span> <b>2,700원</b> <del class="text-size-12">3,000원</del>
+											</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item" data-order="third" data-review="1" data-recom="1">
+										<a href="./detail.html" class="text-decoration-none text-color">
+											<div class="product-item-img">
+												<img src="../img/product/product8_dessert.jpg" alt="product1" />
+												<div class="wish"><img src="../img/icon/heart.svg" alt="wish" /></div>
+											</div>
+											<p class="product-item-text mt-3">
+												<b>귀리우유크림 당근케이크</b><br />
+												<span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
+											</p>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -705,7 +736,7 @@ img {
 		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 		<script>
 			// init Isotope
-			var $grid = $("#grid").isotope({
+			var $grid1 = $("#grid1").isotope({
 				itemSelector: ".product-item",
 				// layoutMode: "fitRows",
 				getSortData: {
@@ -722,7 +753,7 @@ img {
 				var sortValue = $(this).attr("data-sort-value");
 				// make an array of values
 				sortValue = sortValue.split(",");
-				$grid.isotope({ sortBy: sortValue });
+				$grid1.isotope({ sortBy: sortValue });
 			});
 
 			// change is-checked class on buttons
@@ -731,6 +762,110 @@ img {
 				$buttonGroup.on("click", "button", function () {
 					$buttonGroup.find(".is-checked").removeClass("is-checked");
 					$(this).addClass("is-checked");
+				});
+			});
+		</script>
+		<script>
+			// init Isotope
+			var $grid2 = $("#grid2").isotope({
+				itemSelector: ".product-item",
+				// layoutMode: "fitRows",
+				getSortData: {
+					popular: "[data-order]",
+					review: "[data-review]",
+					recommend: "[data-recom]",
+				},
+				// sort by color then number
+				sortBy: ["popular", "review", "recommend"],
+			});
+
+			// bind sort button click
+			$(".sort-by-button-group").on("click", "button", function () {
+				var sortValue = $(this).attr("data-sort-value");
+				// make an array of values
+				sortValue = sortValue.split(",");
+				$grid2.isotope({ sortBy: sortValue });
+			});
+
+			// change is-checked class on buttons
+			$(".button-group").each(function (i, buttonGroup) {
+				var $buttonGroup = $(buttonGroup);
+				$buttonGroup.on("click", "button", function () {
+					$buttonGroup.find(".is-checked").removeClass("is-checked");
+					$(this).addClass("is-checked");
+				});
+			});
+		</script>
+		<script>
+			// init Isotope
+			var $grid3 = $("#grid3").isotope({
+				itemSelector: ".product-item",
+				// layoutMode: "fitRows",
+				getSortData: {
+					popular: "[data-order]",
+					review: "[data-review]",
+					recommend: "[data-recom]",
+				},
+				// sort by color then number
+				sortBy: ["popular", "review", "recommend"],
+			});
+
+			// bind sort button click
+			$(".sort-by-button-group").on("click", "button", function () {
+				var sortValue = $(this).attr("data-sort-value");
+				// make an array of values
+				sortValue = sortValue.split(",");
+				$grid3.isotope({ sortBy: sortValue });
+			});
+
+			// change is-checked class on buttons
+			$(".button-group").each(function (i, buttonGroup) {
+				var $buttonGroup = $(buttonGroup);
+				$buttonGroup.on("click", "button", function () {
+					$buttonGroup.find(".is-checked").removeClass("is-checked");
+					$(this).addClass("is-checked");
+				});
+			});
+		</script>
+		<script>
+			// init Isotope
+			var $grid4 = $("#grid4").isotope({
+				itemSelector: ".product-item",
+				// layoutMode: "fitRows",
+				getSortData: {
+					popular: "[data-order]",
+					review: "[data-review]",
+					recommend: "[data-recom]",
+				},
+				// sort by color then number
+				sortBy: ["popular", "review", "recommend"],
+			});
+
+			// bind sort button click
+			$(".sort-by-button-group").on("click", "button", function () {
+				var sortValue = $(this).attr("data-sort-value");
+				// make an array of values
+				sortValue = sortValue.split(",");
+				$grid4.isotope({ sortBy: sortValue });
+			});
+
+			// change is-checked class on buttons
+			$(".button-group").each(function (i, buttonGroup) {
+				var $buttonGroup = $(buttonGroup);
+				$buttonGroup.on("click", "button", function () {
+					$buttonGroup.find(".is-checked").removeClass("is-checked");
+					$(this).addClass("is-checked");
+				});
+			});
+		</script>
+		<script>
+			const buttonGroup1 = document.querySelectorAll(".nav-link");
+			const buttonToClick = document.querySelector("#pop");
+
+			buttonGroup1.forEach((button) => {
+				button.addEventListener("click", () => {
+					// Simulate a click on the button in the second group
+					buttonToClick.click();
 				});
 			});
 		</script>
