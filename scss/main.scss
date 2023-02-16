@@ -5,6 +5,17 @@ $text-color: #333;
 $secondary: #9E6934;
 
 // main
+.swiper-wrapper {
+}
+.swiper-bg {
+    min-height: 300px;
+    max-height: 500px;
+    height: 55vh !important;
+    background-image: url(../img/main/main_slide_parts.svg);
+    background-position: bottom right -25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 // product
 .product {
     &-item {
