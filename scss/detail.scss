@@ -8,10 +8,12 @@ $secondary: #9E6934;
 .product {
     &-item {
         border-radius: 20px;
+
         &-img {
             display: flex;
             width: 100%;
             position: relative;
+            
         }
         &-text {
             position: relative;
@@ -37,6 +39,9 @@ $secondary: #9E6934;
             right: 40px;
         }
     }
+}
+.shadow{
+    box-shadow: 2px 2px 10px #ddd;
 }
 .p-6{
     padding: 6rem;
@@ -145,16 +150,15 @@ input.minus{
     border-radius: 1rem;
     color: #9E6934;
 }
-.purchasea:hover{
-    background: #c9c6bb;
-}
 .shopping{
+    background: #9E6934;
     width: 8.5rem;
     height: 3.5rem;
     border: none;
     color: white;
     border-radius: 1rem;
 }
+
 @import "./font";
 @import "./mixin";
 @import "./common";
