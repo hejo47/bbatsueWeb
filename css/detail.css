@@ -177,6 +177,10 @@ header {
   font-size: 0.8rem;
 }
 
+.text-size-14 {
+  font-size: 0.9rem;
+}
+
 .section-padding {
   padding-top: 12.5rem;
   padding-bottom: 12.5rem;
@@ -199,11 +203,11 @@ header {
   background-image: url(../img/main/review_bg.png);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100% 500px;
+  background-size: contain;
 }
 .section-bg-image .section-title::after {
   width: 150px;
-  background-color: #FFF;
+  background-color: #333;
 }
 .section-bg-image-2 {
   background-image: url(../img/sub/about_bg.png);
@@ -217,7 +221,7 @@ header {
 }
 .section-title::after {
   position: absolute;
-  bottom: -20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
@@ -242,6 +246,15 @@ footer .copy {
   left: 0;
   z-index: 100;
   display: none;
+}
+
+.menu_icon {
+  width: 23px;
+  height: 23px;
+}
+
+.bs-nav a {
+  font-weight: 500;
 }
 
 /*!
