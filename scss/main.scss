@@ -82,8 +82,11 @@ $secondary: #9E6934;
     }
 }
 .review {
-    img {
-        width: 100%;
+    button {
+        background-color: transparent;
+        border: 2px solid #333;
+        color: #333;
+        font-size: 1.2rem;
     }
 }
 @import "./font";
