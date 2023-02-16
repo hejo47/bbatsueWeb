@@ -7,12 +7,32 @@ $secondary: #9E6934;
 // main
 .swiper-bg {
     min-height: 300px;
-    max-height: 500px;
-    height: 55vh !important;
+    max-height: 600px;
+    height: 65vh !important;
     background-image: url(../img/main/main_slide_parts.svg);
     background-position: bottom right -25px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #EEE;
+        h1 {
+            color: $secondary;
+            font-size: 5.5vw;
+            word-break: keep-all;
+            font-weight: 900;
+            -webkit-text-stroke: 1px #fff;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+        }
+        h3 {
+            font-size: 2.0vw;
+            word-break: keep-all;
+        }
+        .buy_btn {
+            background-color: $secondary;
+            color: #FFF;
+            border: none;
+            font-size: 1.5vw;
+        }
 }
 // product
 .product {
