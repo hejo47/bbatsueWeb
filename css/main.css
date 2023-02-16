@@ -2,12 +2,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .swiper-bg {
   min-height: 300px;
-  max-height: 500px;
-  height: 55vh !important;
+  max-height: 600px;
+  height: 65vh !important;
   background-image: url(../img/main/main_slide_parts.svg);
   background-position: bottom right -25px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: #EEE;
+}
+.swiper-bg h1, .swiper-bg .h1 {
+  color: #9E6934;
+  font-size: 5.5vw;
+  word-break: keep-all;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+.swiper-bg h3, .swiper-bg .h3 {
+  font-size: 2vw;
+  word-break: keep-all;
+}
+.swiper-bg .buy_btn {
+  background-color: #9E6934;
+  color: #FFF;
+  border: none;
+  font-size: 1.5vw;
 }
 
 .product-item:hover img {
