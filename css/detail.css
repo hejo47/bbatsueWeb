@@ -31,6 +31,10 @@
   right: 40px;
 }
 
+.shadow {
+  box-shadow: 2px 2px 10px #ddd;
+}
+
 .p-6 {
   padding: 6rem;
 }
@@ -149,11 +153,8 @@ input.minus {
   color: #9E6934;
 }
 
-.purchasea:hover {
-  background: #c9c6bb;
-}
-
 .shopping {
+  background: #9E6934;
   width: 8.5rem;
   height: 3.5rem;
   border: none;

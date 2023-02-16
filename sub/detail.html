@@ -106,10 +106,10 @@
 		<div class="row product-item-list">
 			<div class="product-item-3">
 				<div class="product-item-img">
-					<img src="../img/detail/detail.png" class="col-6 " alt="product1">
+					<img src="../img/detail/detail.png" class="col-6 shadow" alt="product1">
 					<div class=" col-6 ">
 					<span class="name" id="product_name"> </span>
-					<div class="product-item-text mt-8 text-end d-block"> <span class="gray m-30 ">2,000원</span><span class="red">25% <span class="black">2,200원</div>
+					<div class="product-item-text mt-8 text-end d-block"> <span class="gray m-30 ">2,000원</span><span class="red">25% <span class="black">2,000원</div>
 					<div class="price">
 						<p class="m-4">
 							<ul>
@@ -118,14 +118,14 @@
 									value='+'/><span id='result2'>1</span><input type='button' class="minus"
 									onclick='count("minus")'
 									value='-'/></li>
-								<li class="py-3">총 가격 <span id="result">2,200원</span></li>
+								<li class="py-3">총 가격 <span id="result">0원</span></li>
 								<li>적립</li>
 							</ul>
 						</p>
 					</div>
 					<div class="button-two">
 						<button class="purchase m-3">장바구니</button>
-						<button class="shopping bg-secondary">구매하기</button>
+						<button class="shopping">구매하기</button>
 					</div>															
 				  </div>
 				</div>
@@ -135,10 +135,10 @@
 	</section>
 	<section class="section-padding-3 mt-5" data-aos="fade-up" data-aos-duration="2500">
 		<div class="container">
-			<div class="row product-item-list text-center">
+			<div class="row product-item-list text-center pt-5">
 					<span class="col-4 brown">상세정보</span>
-					<span class="col-4 tap">리뷰</span>
-					<span class="col-4 tap">문의</span>
+					<a href="#review" class="col-4 tap">리뷰</a>
+					<a href="#inquiry" class="col-4 tap">문의</a>
 					<div class="text-center">
 						<table class="table">
 							<tr>
@@ -186,15 +186,14 @@
 				     </div>
 					 <div><button class="more mb-5">상품 더보기</button>	</div>
 					 <span class="col-4 tap">상세정보</span>
-					<span class="col-4 brown">리뷰</span>
+					<span id="review" class="col-4 brown">리뷰</span>
 					<span class="col-4 tap">문의</span>
 					<div class="p-6">
 						<span>작성된 리뷰가 없습니다</span>
-					</div>
-					<hr class="mb-5">
-					<span class="col-4 tap">상세정보</span>
-					<span class="col-4 tap">리뷰</span>
-					<span class="col-4 brown">문의</span>
+					</div>	
+						<span class="col-4 tap">상세정보</span>
+						<span class="col-4 tap">리뷰</span>
+						<span id="inquiry" class="col-4 brown">문의</span>
 					<div class="mt-5">
 						<div class="p-6"><span>작성된 문의가 없습니다.</span></div>
 					</div>
