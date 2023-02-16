@@ -5,6 +5,15 @@ $text-color: #333;
 $secondary: #9E6934;
 
 // main
+.swiper-bg {
+    min-height: 300px;
+    max-height: 500px;
+    height: 55vh !important;
+    background-image: url(../img/main/main_slide_parts.svg);
+    background-position: bottom right -25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 // product
 .product {
     &-item {
@@ -14,6 +23,7 @@ $secondary: #9E6934;
             }
             .product-item-text {
                 color: #9E6934;
+                font-weight: 500;
             }
         }
         &-img {
@@ -29,6 +39,8 @@ $secondary: #9E6934;
         }
         &-text {
             transition: 0.5s all ease;
+            color: #777;
+            font-weight: 400;
             .red {
                 color: #F27979;
             }
@@ -59,4 +71,5 @@ $secondary: #9E6934;
 @import "./mixin";
 @import "./common";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 
