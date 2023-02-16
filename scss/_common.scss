@@ -1,3 +1,4 @@
+
 // header
 header {
     border-bottom: 1px solid $secondary;
@@ -8,6 +9,9 @@ header {
 }
 .text-size-12 {
     font-size: 0.8rem;
+}
+.text-size-14 {
+    font-size: 0.9rem;
 }
 // section
 .section {
@@ -33,11 +37,11 @@ header {
         background-image: url(../img/main/review_bg.png);
         background-position: top;
         background-repeat: no-repeat;
-        background-size: 100% 500px;
+        background-size: contain;
         .section-title {
             &::after {
                 width: 150px;
-                background-color: #FFF;
+                background-color: #333;
             }
         }
     }
@@ -52,7 +56,7 @@ header {
         font-weight: 600;
         &::after {
             position: absolute;
-            bottom: -20px;
+            bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
             width: 60px;
@@ -81,4 +85,15 @@ footer {
     left: 0;
     z-index: 100;
     display: none;
+}
+
+.menu_icon {
+    width: 23px;
+    height: 23px;
+}
+
+.bs-nav {
+    a {
+        font-weight: 500;
+    }
 }
